@@ -1,0 +1,28 @@
+{% extends 'base_template.twig' %}
+
+{% block page_content %}
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="jumbotron">
+                    <h1 class="text-center">{{ message }}</h1>
+                    <p class="text-center">I have been called X many times.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                    <div class="btn-group" role="group" aria-label="button-counter">
+                        <button type="button" class="btn btn-info">Plus</button>
+                    </div>
+                    <div class="btn-group" role="group" aria-label="button-counter">
+                        <button type="button" class="btn btn-info">Minus</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

@@ -2,6 +2,6 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'base_template.twig', {
+    return render(request, 'index.twig', {
         'message': 'Hello, world!'
     })
