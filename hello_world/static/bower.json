@@ -1,0 +1,22 @@
+{
+  "name": "static",
+  "homepage": "https://github.com/anugnes/hello-world-pro",
+  "authors": [
+    "demus <nugnes.alberto@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.1"
+  }
+}

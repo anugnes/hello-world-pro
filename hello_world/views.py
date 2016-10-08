@@ -1,6 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. This is my very first hello world.")
+    return render(request, 'base_template.twig', {
+        'message': 'Hello, world!'
+    })
