@@ -29,3 +29,10 @@ class DislikeView(HelloWorldView):
     def get(self, request):
         self.r.decr('counter', 1)
         return HttpResponse(status=200)
+
+
+class ResetCounterView(HelloWorldView):
+
+    def get(self, request):
+        self.r.set('counter', 0)
+        return HttpResponse(status=200)

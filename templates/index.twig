@@ -9,15 +9,21 @@
                     <h1 class="text-center">{{ message }}</h1>
                     {% if score == 0 %}
                         <p class="text-center">Nobody cares about me.</p>
-                    {% elif score == -1 %}
+                        {% elif score == -1 %}
                         <p class="text-center">Wow... I've been disliked {{ score }} time.</p>
-                    {% elif score < -1 %}
+                        {% elif score < -1 %}
                         <p class="text-center">Wow... I've been disliked {{ score }} times.</p>
-                    {% elif score == 1 %}
+                        {% elif score == 1 %}
                         <p class="text-center">I have been liked {{ score }} time.</p>
                     {% else %}
-                            <p class="text-center">I have been liked {{ score }} times.</p>
+                        <p class="text-center">I have been liked {{ score }} times.</p>
                     {% endif %}
+                    <p class="text-center small">
+                        <small>
+                            Want to reset the counter? Click <a href="{% url 'reset' %}" type="button"
+                                                                class="btn btn-xs btn-danger">here</a>
+                        </small>
+                    </p>
                 </div>
             </div>
         </div>
