@@ -19,5 +19,7 @@ from hello_world import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index')
+    url(r'^$', views.index, name='index'),
+    url(r'^like/$', views.like, name='like'),
+    url(r'^dislike/$', views.dislike, name='dislike')
 ]
