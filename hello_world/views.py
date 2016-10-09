@@ -11,10 +11,11 @@ class HelloWorldView(View):
 
     def get(self, request):
         score = self.r.get('counter')
-        return render(request, 'index.twig', {
+        data = {
             'message': 'Hello, world!',
-            'score': score
-        })
+            'score': int(score)
+        }
+        return render(request, 'index.twig', data)
 
 
 class LikeView(HelloWorldView):
