@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from hello_world import views
+from hello_world.views import HelloWorldView, LikeView, DislikeView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', views.index, name='index'),
-    url(r'^like/$', views.like, name='like'),
-    url(r'^dislike/$', views.dislike, name='dislike')
+    url(r'^$', HelloWorldView.as_view(), name='index'),
+    url(r'^like/$', LikeView.as_view(), name='like'),
+    url(r'^dislike/$', DislikeView.as_view(), name='dislike')
 ]
